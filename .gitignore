@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+bower_components
+*.bowerrc
+
+# Ignore pow environment settings
+.powenv
+
+
