@@ -6,25 +6,23 @@
     <style>
 
         .shorty {
-            color: #ddd;
+            color: #222;
         }
 
-        .shorty[min-width~="400px"] {
+        .shorty[data-eq-state="large"] {
             /* not exactly 400px, seems to be 417 px*/
             color: #800;
         }
 
     </style>
-    <script src="bower_components/css-element-queries/src/ResizeSensor.js"></script>
-    <script src="bower_components/css-element-queries/src/ElementQueries.js"></script>
+    <script src="bower_components/eq.js/dist/eq.min.js"></script>
 </head>
 <body>
 <div>
     Some random stuff here. No need to read.
 </div>
-<div class="shorty">
+<div class="shorty" data-eq-pts="large: 400">
     Some random stuff here. No need to read.
 </div>
-
 </body>
 </html>

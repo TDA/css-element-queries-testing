@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="custom-eq.js"></script>
+</head>
+<body>
+
+<div style="opacity: 1;" class="fade-in-forward" id="fox-logo"></div>
+<div style="display: none;" id="loading-spinner" class="spinner"></div>
+<div style="opacity: 1;" class="fade-in-forward" id="stage"><div class="sign-in"><div id="main-content" class="card">
+    <header>
+        <h1 id="fxa-signin-header">
+            Sign in
+        </h1>
+    </header>
+
+    <section>
+
+        <div style="" class="error"></div>
+        <div style="" class="success"></div>
+
+
+        <form novalidate="">
+            <div class="input-row">
+                <input class="email" placeholder="Email" value="" spellcheck="false" autofocus="" type="email">
+            </div>
+
+            <div class="input-row password-row">
+                <input class="password tooltip-below" id="password" placeholder="Password" value="" pattern=".{8,}" required="" type="password">
+
+                <input id="show-password" class="show-password" aria-controls="password" tabindex="-1" data-novalue="" type="checkbox">
+                <label for="show-password" class="show-password-label">
+                    Show
+                </label>
+            </div>
+
+            <div class="button-row">
+                <button id="submit-btn" type="submit" class="">Sign in</button>
+            </div>
+        </form>
+
+        <div class="links">
+            <a href="/reset_password" class="left reset-password" data-eq-pts="large: 169px">Forgot password?</a>
+
+            <a data-eq-state="large" href="/signup" class="right sign-up" data-eq-pts="large: 169px">Create an account with realllllllly long ttextttt</a>
+        </div>
+
+        <div class="extra-links">
+            By proceeding, you agree to the <a id="fxa-tos" href="/legal/terms">Terms of Service</a> and <a id="fxa-pp" href="/legal/privacy">Privacy Notice</a> of Firefox cloud services.
+        </div>
+
+    </section>
+</div>
+</div></div>
+
+<a id="about-mozilla" rel="author" target="_blank" href="https://www.mozilla.org/about/?utm_source=firefox-accounts&amp;utm_medium=Referral"></a>
+
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- this will be overwritten if JS is enabled -->
+<!--[if !(IE) | (gte IE 10)]><!-->
+<noscript>
+    Firefox Accounts requires JavaScript.
+</noscript>
+<!--<![endif]-->
+
+<!-- no build declaration, main.js build
+     is done by requirejs and not concat.
+     rev/usemin will still replace the URL
+     with a cache aware URL.
+ -->
+<!--[if gt IE 9]><!-->
+<!--<![endif]-->
+
+
+
+</body>
+</html>
